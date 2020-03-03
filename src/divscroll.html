@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>两个div同步滚动</title>
+    <style>
+        .top {
+            overflow-x: scroll;
+            width: 400px;
+            border: 1px solid #efefee;
+        }
+
+        .bottom {
+            overflow-x: scroll;
+            width: 400px;
+            border: 1px solid #efefee;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <div class="top">
+        <p>FJDLSKJAFKLDSJLAFJKLDSJALFJDLSAJFLkubernetes停止将新的连接路由到需要终止的pod。已建立的连接将保持不变并保持打开状态。
+            假设容器将开始停止，Kubernetes将TERM信号发送到Pod中每个容器的根进程。它发送的这个信号无法配置。
+            等待pod的TerminalGracePeriodSeconds中指定的时间段(默认为30秒),如果此时容器仍在运行，它将发送KILL终止容器
+            由于在更新过程中,我们使用jmeter一直发起请求，所以有部分请求仍会发送到需要delete的pod,很明显在30s内它处理不完这么多的请求,而当过了30s之后，发送KILL命令就导致有些请求失败了。
+            那么能不能当我们收到通知的时候就不接收新的请求了呢？然后再把正在处理的请求处理完成之后在关闭我们的应用。
+            由于我们使用的内嵌的tomcat,所以只需要实现对应的接口就行了</p>
+    </div>
+    <div class="bottom">
+        <p>
+            FJDLSKJAFKLDSJLAFJKLDSJALFJDLSAJFLkubernetes停止将新的连接路由到需要终止的pod。已建立的连接将保持不变并保持打开状态。
+            假设容器将开始停止，Kubernetes将TERM信号发送到Pod中每个容器的根进程。它发送的这个信号无法配置。
+            等待pod的TerminalGracePeriodSeconds中指定的时间段(默认为30秒),如果此时容器仍在运行，它将发送KILL终止容器
+            由于在更新过程中,我们使用jmeter一直发起请求，所以有部分请求仍会发送到需要delete的pod,很明显在30s内它处理不完这么多的请求,而当过了30s之后，发送KILL命令就导致有些请求失败了。
+            那么能不能当我们收到通知的时候就不接收新的请求了呢？然后再把正在处理的请求处理完成之后在关闭我们的应用。
+            由于我们使用的内嵌的tomcat,所以只需要实现对应的接口就行了
+        </p>
+    </div>
+</body>
+
+</html>
