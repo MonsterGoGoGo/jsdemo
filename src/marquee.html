@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>两个div同步滚动</title>
+    <style>
+        @keyframes kf-marque-animation {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-33.3%);
+            }
+        }
+
+        .marquee {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            background: #fff;
+            border: none;
+            display: block;
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: clip;
+            position: relative;
+            font-size: 28rpx;
+        }
+
+        .marquee .content {
+            display: inline-block;
+            position: relative;
+            padding-right: 0px;
+            animation: kf-marque-animation 11.3s linear infinite;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div>css3 + animation跑马灯</div>
+
+        <div class="marquee">
+            <div class="content">
+                <span>我是一段很长很长很长的文字</span> <span style="display: inline-block; width: 5em;"></span>
+                <span>我是一段很长很长很长的文字2</span> <span style="display: inline-block; width: 5em;"></span>
+                <span>我是一段很长很长很长的文字3</span> <span style="display: inline-block; width: 5em;"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
